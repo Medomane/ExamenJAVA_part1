@@ -35,6 +35,9 @@ public class _func {
             return false;
         }
     }
+    public static boolean isNumeric(String value){
+        return isLong(value) && isDouble(value);
+    }
     public static ImageView getImage(String name, double w, double h) {
         if(!name.contains(".")) name = "src/tmp/Images/"+name+".png";
         else name = "src/tmp/Images/"+name;
